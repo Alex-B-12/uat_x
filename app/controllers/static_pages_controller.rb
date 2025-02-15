@@ -13,7 +13,7 @@ class StaticPagesController < ApplicationController
 
 	def contact_us
 		@birdy = "call us at (414) 216-7002 or 
-			email us at ruby@onrails.com"
+			email us at Ruby@onrails.com"
 	end
 
 end
