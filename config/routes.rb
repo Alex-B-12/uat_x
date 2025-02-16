@@ -19,4 +19,6 @@ Rails.application.routes.draw do
   get 'contact_us', to: 'static_pages#contact_us'
 
   resources 'tweets'
+
+  resources 'profiles'
 end
