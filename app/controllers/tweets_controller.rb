@@ -12,7 +12,6 @@ end
 
 
 
-
 def create
 	print "rex rex fire fire "
 	print params["tweet"]["content"]
@@ -25,10 +24,11 @@ def create
 	else
 		render 'new'
 		#do something else
-
+end
 
 	# this is the code that will create a new tweet
 	# and then go back to the beginning with a fresh form
-end	
+end
+
 
 end
