@@ -20,8 +20,13 @@ def create
 	@tweet = Tweet.new
 	@tweet.content = params["tweet"]["content"]
 	@tweet.save
+	if @tweet.save
+		redirect_to new_tweet_path
+	else
+		render 'new'
+		#do something else
 
-	redirect_to new_tweet_path
+
 	# this is the code that will create a new tweet
 	# and then go back to the beginning with a fresh form
 end	
