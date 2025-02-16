@@ -27,7 +27,8 @@ def create
 end
 
 	# this is the code that will create a new tweet
-	# and then go back to the beginning with a fresh form
+	# and then go back to the beginning with a 
+	# fresh form
 end
 
 
