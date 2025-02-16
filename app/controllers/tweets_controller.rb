@@ -23,7 +23,8 @@ def create
 	if @tweet.save
 		redirect_to new_tweet_path
 	else
-		render 'new'
+		render 'new', status: 422
+
 		#do something else
 end
 
