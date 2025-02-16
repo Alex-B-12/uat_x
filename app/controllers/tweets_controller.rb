@@ -1,6 +1,6 @@
 class TweetsController < ApplicationController
 
-
+# current_user
 before_action :authenticate_user!
 
 
@@ -18,6 +18,7 @@ def create
 	print "cold cold cold cold cold "
 	@tweet = Tweet.new
 	@tweet.content = params["tweet"]["content"]
+	@tweet.user = current_user
 	@tweet.save
 	if @tweet.save
 		redirect_to new_tweet_path
