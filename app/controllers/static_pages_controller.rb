@@ -17,6 +17,10 @@ class StaticPagesController < ApplicationController
 			email us at Ruby@onrails.com"
 	end
 
+	def dumbass
+		@dumbass = "dumbass"
+	end
+
 end
 
 

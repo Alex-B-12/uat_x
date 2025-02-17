@@ -10,11 +10,19 @@
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">This is the only Freaky-Ahh-focused twitter app in the whole wide world!! congrats on finding our fantastic page, we hope you enjoy your time exploring what there is to see in our lovely minds</p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Hell yeah!</button>
+
+
+        <%= link_to tweets_path, class: "nav-link active" do %>
+  <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Hell yeah!</button>
+<% end %>
 
         
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Click this if you're stoopid</button>
 
+
+        <%= link_to tweets_path, class: "nav-link active" do %>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Click this if you're stoopid
+        </button>
+        <% end %>
 
 
       </div>

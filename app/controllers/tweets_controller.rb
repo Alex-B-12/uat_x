@@ -10,6 +10,10 @@ def new
 end
 
 
+def index
+	@tweets = Tweet.all
+end
+
 
 
 def create
